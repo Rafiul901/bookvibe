@@ -47,7 +47,7 @@ const Navbar = () => {
               Sign In
             </button>
             <button 
-              className="px-5 py-2 text-sm font-medium bg-emerald-600  rounded-lg hover:bg-emerald-700 transition-colors shadow-sm"
+              className="px-5 py-2 text-sm font-medium bg-yellow-400  rounded-lg hover:bg-red-500 transition-colors shadow-sm"
             >
               Sign Up
             </button>
