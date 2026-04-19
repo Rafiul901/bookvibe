@@ -26,7 +26,7 @@ const Navbar = () => {
               Home
             </a>
             <a 
-              href="/listed-books" 
+              href="/about" 
               className=" hover:text-blue-500 px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               Listed Books

@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
+
+import { useLoaderData } from 'react-router-dom';
 import Books from './Books';
+import Banner from '../components/Banner';
 
 
 const Home = () => {
-    const [allBooks,setBooks]= useState([]);
-    const bookPr = async()=>{
-    const res = await fetch('./bookData.json');
-    const data =await res.json();
-    setBooks(data)
-       console.log(data);
-    }
+
+const data = useLoaderData();
+console.log(data);
  
     return (
-        <div>
-         <button onClick={bookPr} className='btn btn-primary'>Load ALL</button>
-          <Books allBooks={allBooks}></Books>
-        </div>
+      <div>
+        <Banner></Banner>
+        <Books data={data}></Books>
+      </div>
     );
 };
 
