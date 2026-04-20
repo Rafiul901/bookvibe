@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Book = ({ book }) => {
   const {
@@ -8,6 +9,7 @@ const Book = ({ book }) => {
     rating,
     category,
     tags,
+    bookId,
     totalPages,
     yearOfPublishing
   } = book;
@@ -67,9 +69,9 @@ const Book = ({ book }) => {
             {category}
           </span>
 
-          <button className="btn btn-sm btn-primary rounded-full px-4">
+       <Link className="btn btn-sm btn-primary"  to={`/bookDetails/${bookId}`}>   
             Details →
-          </button>
+          </Link>
         </div>
       </div>
     </div>
